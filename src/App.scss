@@ -1,0 +1,93 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.mainimg{
+  width: 100vw;
+  border: 1.5px solid;
+  border-left: 0;
+  border-right: 0;
+  margin: 4.6vw 0 4.6vw 0;
+}
+
+.scription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title{
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5.6vw;
+  }
+  .author{
+    font-weight: bold;
+    text-align: center;
+    margin: 1.9vw 0 4.6vw 0;
+    font-size: 2.8vw;
+    letter-spacing: 5.6vw;
+    padding-left: 5.6vw;
+  }
+  .subs{
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100vw;
+    font-size: 2.8vw;
+  }
+  ._table{
+    margin: 4.6vw 0 4.6vw 0;
+    font-size: 2.8vw;
+    ._line{
+      height: 0;
+      margin: 0.5vw 0 0.5vw 0;
+      border: solid 0.1vw #000000;
+      width: 100vw;
+    }
+    .xy{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      padding-left: 1.9vw;
+    }
+  }
+}
+
+
+//width가 1080px 이상일 때
+@media screen and (min-width:1080px)
+{
+  .mainimg{
+    margin: 50px 0 50px 0;
+  }
+
+  .scription{
+    .title{
+      font-size: 60px;
+    }
+    .author{
+      margin: 20px 0 50px 0;
+      font-size: 30px;
+      letter-spacing: 60px;
+      padding-left: 60px;
+    }
+    .subs{
+      width: 1080px;
+      font-size: 30px;
+    }
+    ._table{
+      margin: 50px 0 50px 0;
+      font-size: 30px;
+      ._line{
+        margin: 5px 0 5px 0;
+        border: solid 1px #000000;
+        width: 1080px;
+      }
+      .xy{
+        padding-left: 0;
+      }
+    }
+  }
+  //only in min-width: 1080px
+  .imgset{
+    padding: calc(50vw - 540px); 
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
